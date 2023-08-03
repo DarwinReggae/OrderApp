@@ -1,13 +1,8 @@
 ﻿using AutoMapper;
 using Contracts;
-using Entities.Models;
 using Entities.DataTransferObjects;
-using Microsoft.EntityFrameworkCore;
-using OrderApp.Entities;
-using AutoMapper.Internal;
 using Exceptions;
 using System.Text.RegularExpressions;
-using Microsoft.EntityFrameworkCore.Query.Internal;
 
 namespace Repositories
 {
