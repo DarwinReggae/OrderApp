@@ -15,6 +15,11 @@ namespace Services
             int distance = (int)Math.Sqrt(Math.Pow(latitudeA - latitudeB, 2) + Math.Pow(longitudeA - longitudeB, 2));
             return distance;
         }
+        /// <summary>
+        /// Noktadan önce en fazla 3 ve noktadan sonra en fazla 2 veya hiç olmak üzere bir koordinat validasyonu.
+        /// </summary>  
+        /// <param name="latitude">X</param>
+        /// <param name="longitude">Y</param> 
         private static void ValidateCoordinates(double latitude, double longitude)
         {
             Regex regex = new("^[ 0-9]{1,3},[0-9]{0,2}$|^([0-9]{1,3})$");
@@ -29,13 +34,13 @@ namespace Services
             this.mapper = mapper;
         }
         /// <summary>
-        /// Find five nearest restaurant branch to user if exist.
+        /// Kullanıcıya en yakın restorantların en fazla beş tanesine ulaştıran metod.
         /// </summary>
-        /// <param name="latitude">The x in coordinates.</param>
-        /// <param name="longitude">The y in coordinates.</param>     
+        /// <param name="latitude">X.</param>
+        /// <param name="longitude">Y</param>     
         public async Task<List<RestaurantBranchDto>> FindFiveNearestBranches(double latitude, double longitude)
         {
-            ValidateCoordinates(latitude, longitude);   
+            ValidateCoordinates(latitude, longitude);
 
             var restaurantBranches = await BaseRepositoryOperations.GetAllBranches();
             var nearestRestaurantBranches = restaurantBranches.OrderBy(b => FindDistance(b.Latitude, b.Longitude, latitude, longitude)).Take(5).ToList();
@@ -56,8 +61,5 @@ namespace Services
             }
             return nearestRestaurantBranchDtos;
         }
-       
     }
-
-
 }

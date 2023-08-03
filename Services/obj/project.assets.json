@@ -720,7 +720,6 @@
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "Contracts >= 1.0.0",
-      "Entities >= 1.0.0",
       "Exceptions >= 1.0.0"
     ]
   },
@@ -730,11 +729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Repositories\\Services6.csproj",
-      "projectName": "Services6",
-      "projectPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Repositories\\Services6.csproj",
+      "projectUniqueName": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Services\\Services.csproj",
+      "projectName": "Services",
+      "projectPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\beyza\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Repositories\\obj\\",
+      "outputPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\beyza\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -753,9 +752,6 @@
           "projectReferences": {
             "C:\\Users\\beyza\\source\\repos\\OrderApp\\Contracts\\Contracts.csproj": {
               "projectPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Contracts\\Contracts.csproj"
-            },
-            "C:\\Users\\beyza\\source\\repos\\OrderApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Entities\\Entities.csproj"
             },
             "C:\\Users\\beyza\\source\\repos\\OrderApp\\Exceptions\\Exceptions.csproj": {
               "projectPath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Exceptions\\Exceptions.csproj"

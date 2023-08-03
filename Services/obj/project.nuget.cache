@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LWRz1PfjtgczvJ558XqtzRP2SEC2TOTXI7KyCGTaPOCNcLdMtEIUfIIOyCw9tpyLFVmlRfDw+ZsmatRL57K6kw==",
+  "dgSpecHash": "65AGeA/qU6ua7uIOTDvJZonRK+8XBm11gtUWLbRg6JyF/0z6VUqyAlAQk3/DEkZjGt6HWqw7ZWdREVf+Afu+jA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Repositories\\Services6.csproj",
+  "projectFilePath": "C:\\Users\\beyza\\source\\repos\\OrderApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beyza\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\beyza\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
